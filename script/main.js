@@ -1,3 +1,9 @@
+// 刷新
+var reload = document.getElementById('reload');
+reload.onclick = function(){
+	location.href = location.href;
+}
+
 // 全局变量，棋盘
 var qiPan = [[0,0,0,],[0,0,0,],[0,0,0]];
 // 全局变量标记
