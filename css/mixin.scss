@@ -1,0 +1,52 @@
+@mixin trans-center() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-webkit-transform:translate(-50%,-50%);
+	-moz-transform:translate(-50%,-50%);
+	-o-transform:translate(-50%,-50%);
+}
+@mixin trans-left-center() {
+	position: absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+}
+@mixin mix-opacity($opa) {
+	opacity:$opa;
+	-moz-opacity:$opa;
+	-khtml-opacity:$opa;
+	filter:alpha(opacity=$opa*100);
+}
+@mixin mix-main() {
+	width: $cont-width;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+@mixin trans-top-center($top:0px) {
+	position: absolute;
+	top: $top;
+	left: 50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+}
+@mixin mix-background($url) {
+	background:{
+		image:url($url);
+		repeat:no-repeat;
+		position: center;
+		size:cover;
+	}
+}
+@mixin mix-round-box($side) {
+	width: $side;
+	height: $side;
+	overflow: hidden;
+	border-radius: 50%;
+}

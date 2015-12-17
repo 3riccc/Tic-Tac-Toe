@@ -1,0 +1,29 @@
+@import "mixin";
+$header:30px;
+html{
+	.qipan{
+		width: 300px;
+		height: 300px+$header;
+		border:3px solid yellow;
+		@include trans-center();
+		.mingzi{
+			height: $header;
+			width: 300px;
+			text-align: center;
+			line-height: $header;
+			box-sizing:border-box;
+		}
+		.gezi{
+			width: 100px;
+			height: 100px;
+			box-sizing:border-box;
+			float: left;
+			border:1px solid lightblue;
+			line-height: 100px;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+
+}
